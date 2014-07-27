@@ -7,3 +7,17 @@
 .status-modified { .text(warning); }
 .status-removed { .text(error); }
 .status-renamed { .text(success); }
+
+.editor .gutter .line-number {
+  &.git-line-added {
+    border-color: @text-color-added;
+  }
+
+  &.git-line-modified {
+    border-color: @text-color-modified;
+  }
+
+  &.git-line-removed {
+    border-color: @text-color-removed;
+  }
+}

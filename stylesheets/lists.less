@@ -44,9 +44,12 @@
 &.select-list ol.list-group {
   li.two-lines {
     .secondary-line { color: @text-color-subtle; }
-    &.selected .secondary-line {
-      color: @text-color;
-      text-shadow: none;
+    &.selected {
+      color: @text-color-selected;
+      .secondary-line {
+        color: @text-color;
+        text-shadow: none;
+      }
     }
   }
 
